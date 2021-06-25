@@ -67,4 +67,8 @@ public class PlayerMovement : MonoBehaviour
     {
         rb.velocity = Vector2.up * playerJumpForce*1.5f;
     }
+    public void PlayerDead()
+    {
+        Destroy(this.gameObject);
+    }
 }
